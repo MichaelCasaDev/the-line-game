@@ -198,3 +198,7 @@ body {
   font-size: 50px;
   font-style: italic;
 }
+
+#ver{
+  z-index: 100;
+}
