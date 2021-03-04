@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>The Line Game</title>
+	<meta charset="UTF-8" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="apple-touch-icon" href="src/img/superpower.png">
+	<link rel="shortcut icon" type="image/x-icon" href="src/img/siteicon.png" />
+	<link rel='stylesheet' href='src/styles.css' />
+</head>
+
+<body>
+	<button id="touch-screen" onclick="spaceTouchScreen()"></button>
+	<div id="gamestart">
+		<div id="gametitle">The Line Game</div>
+		<div id="gametext">It's very easy to play!!<br>
+							Simply press space when the line reaches 100 or 98. <br>
+							At 100 you will get extra life.<br>
+							If you can't press space in time you will lose life !!<br>
+							Good game </div>
+		<br><br>
+		<div id="starttext">Press SPACE to start...</div>
+		<br><br>
+		<div id="imagestart"><img src="src/img/superpower.png"></div>
+	</div>
+
+	<div id="menubar">
+		<div id="menutitle">Menu</div>
+		<div id="mainmenu" onclick="mainmenu()">Go to Main Menu</div>
+		<div id="continue" onclick="retry()">Continue play...</div>
+	</div>
+
+	<div id="game">
+		<div id="num">🤯</div>
+		<div id='line'></div>
+		<div id='score'></div>
+		<div id="life"></div>
+		<div id="lose"></div>
+		<div id="retrybuttons">
+			<button id="mainmenubutton" onclick="mainmenu()">Main Menu</button>
+			<button id="retrybutton" onclick="retry()">Retry</button>
+		</div>
+	</div>
+
+	<div id="ver">Version 1.0.3</div>
+
+	<div id="devinfo">
+		<div id="devname"><b>Developer: </b>Michael Casagrande</div>
+		<div id="devinsta"><b>Instagram: </b><a href="https://www.instagram.com/michael.casa.dev/" target="_blank">@Michael.casa.dev</a></div>
+	</div>
+	<!-- Scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="src/index.js">
+</script>
+</body>
+
+</html>

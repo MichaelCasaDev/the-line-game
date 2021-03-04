@@ -1,0 +1,200 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  background: black;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  #num {
+    font-size: 10px;
+  }
+  
+}
+
+/*Scenes*/
+
+#touch-screen{
+  border-color: black;
+  background: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+#gamestart{
+  width: 100%;
+  height: 50%;
+  position: fixed;
+  text-align: center;
+}
+
+#menubar{
+  text-align: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+#game{
+  width: 100%;
+  height: 100%;
+}
+
+#devinfo{
+  font-size: 15px;
+  position: absolute;
+  flex: 1;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+#devinfo a:link{
+  text-decoration: none;
+  color: orange;
+}
+
+#devinfo a:visited{
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+/*Scenes Objects*/
+
+
+
+#starttext{
+  font-size: 25px;
+  animation:blinkingText 1.2s infinite;
+}
+/*Animate StartText*/
+@keyframes blinkingText{
+  0%{     color: white;    }
+  49%{    color: rgb(231, 139, 139); }
+  60%{    color: transparent; }
+  99%{    color:transparent;  }
+  100%{   color: white;    }
+}
+
+#gametext{
+  padding-top: 50px;
+  font-size: 30px;
+  align-items: center;
+}
+
+#gametitle{
+  font-size: 45px;
+  color: aqua;
+  align-items: center;  
+}
+
+#num {
+  font-size: 30vh;
+}
+
+#line {
+  align-items: center;
+  position: absolute;
+  height: 10px;
+  width: 100%;
+  margin: 0 auto;
+  background: white;
+  bottom: 0%;
+  transform: translateY(100%);
+  transition: width 0.2s ease;
+}
+
+#score {
+  position: absolute;
+  font-size: 10vh;
+  bottom: 1vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#life{
+  margin-right: 15px;
+  font-size: 35px;
+  float: right;
+}
+
+#lose img{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 150px;
+  height: 200px;
+  width: 200px;
+}
+
+#mainmenubutton{
+  padding: 15px;
+  margin-left: 180px;
+  float: left;
+  font-size: 20px;
+  border: hidden;
+  background: whitesmoke;
+  box-shadow:
+      0 0 60px 30px #fff,  
+      0 0 100px 60px #f0f, 
+      0 0 140px 90px #0ff;
+  display: block;
+}
+
+#retrybutton{
+  padding: 15px;
+  margin-right: 180px;
+  float: right;
+  font-size: 20px;
+  border: hidden;
+  background: whitesmoke;
+  box-shadow:
+      0 0 60px 30px #fff,  
+      0 0 100px 60px #f0f, 
+      0 0 140px 90px #0ff;
+  display: block;
+}
+
+#mainmenu{
+  color: black;
+  background: whitesmoke;
+  box-shadow:
+      0 0 60px 30px #fff,  
+      0 0 100px 60px #f0f, 
+      0 0 140px 90px #0ff;
+  padding: 10px;
+  border-style: solid;
+  margin-left: 200px;
+  margin-top: 150px;
+  display: block;
+  float: left;
+}
+
+#continue{
+  color: black;
+  background: whitesmoke;
+  box-shadow:
+  0 0 60px 30px #fff,  
+  0 0 100px 60px #f0f, 
+  0 0 140px 90px #0ff;
+  padding: 10px;
+  border-style: solid;
+  margin-right: 200px;
+  margin-top: 150px;
+  display: block;
+  float: right;
+}
+
+#menutitle{
+  font-size: 50px;
+  font-style: italic;
+}
