@@ -6,7 +6,7 @@ To use open the console (F12), paste it and execute the code.
 
 ```js
 setInterval(() => {
-    if(line.style.bottom == "99%"){
+    if(line.style.bottom == "100%" || line.style.bottom == "99%" || line.style.bottom == "98%"){
         simulateKey(32);
     }
 }, 10)
